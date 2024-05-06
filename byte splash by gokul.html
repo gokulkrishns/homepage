@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navigation-bar {
+            display: flex;
+            width: 100%;
+            height: 80px;
+            /* border: 3px solid black; */
+            align-items: center;
+            box-shadow: 0px 10px 10px #888888;
+            /* position: sticky;
+            top:0px; */
+        }
+
+        #info-to-and-of-candidate {
+            /* position: static;
+            top: 0px; */
+            /* z-index: 2px; */
+            box-shadow: 0px 10px 50px #888888;
+            width: 100%;
+            height: auto;
+        }
+
+        .info-of-canditade-1 {
+            width: 41%;
+            background-color: #0661a7;
+            border-radius: 10px;
+            color: #fff2ec;
+            padding: 10px 30px;
+            margin-top: 10px;
+            margin-left: 15px;
+            word-spacing: 3px;
+            line-height: 30px;
+            font-size: 1rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        #info-of-canditade {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+        }
+
+        .candidate-details {
+            width: 95%;
+            background-color: #ffffff;
+            padding: 10px 10px;
+            /* line-height: 40px; */
+        }
+
+        /* #program-designed-for-you {
+            width: 100%;
+            height: 35%;
+            border: 3px solid black;
+        } */
+
+        #footer-bar {
+            width: 100%;
+            height: auto;
+            /* border: 3px solid black; */
+            background-color: #0661a7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: larger;
+        }
+
+        .home {
+            width: auto;
+            background-color: #0661a7;
+            color: #ffffff;
+            margin-left: 20px;
+        }
+
+        .home:hover {
+            background-color: #ffffff;
+            color: #0661a7;
+        }
+
+        .button {
+            width: auto;
+            color: #4f51b5;
+            border-radius: 3px;
+            padding: 5px 10px;
+            letter-spacing: 2px;
+            position: relative;
+            margin-left: 25px;
+        }
+
+        .button:hover{
+            background-color: #0661a7;
+            color: #fff2ec;
+        }
+
+        .navigation-svg:hover {
+            fill: #fff2ec;
+        }
+
+        .lms-decoration:hover {
+            text-decoration: underline;
+        }
+
+        .get-started:hover {
+            background-color: #0a0c24;
+        }
+
+        .box {
+            width: 290px;
+            padding: 10px 30px;
+            border: 0.05rem solid #dcdcdc;
+            border-radius: 5px;
+            align-content: center;
+            text-align: center;
+            margin-left: 20px;
+        }
+
+        .courses-boxes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .row-1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row-2 {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .ByteSplashTeam:hover {
+            background-color: #ffffff;
+            color: #0661a7;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navigation-bar">
+        <div style="padding: 2px 15px;">
+            <div><img src="../bytesplash images/ByteSplash_Logo.png" alt="ByteSplash_Logo"
+                    style="width: 200px; height: 30px;align-items: center; "></div>
+
+            <div style="color: #928f8f;align-items:baseline;"><b>Training & Placement Center</b></div>
+        </div>
+        <div class="button">
+            <!-- <input type="button" id="home" form="home"> -->
+            <label for="home">Home</label>
+        </div>
+        <div class="button">
+            <!-- <input type="button" name="Courses" id="Courses"> -->
+            <label for="Courses">Courses</label>
+        </div>
+        <div class="button">
+            <!-- <input type="button" name="Contact" id="Contact"> -->
+            <label for="Contact">Contact</label>
+        </div>
+        <span class="button">
+            <!-- <input type="button" name="number" id="number"> -->
+            <svg class="navigation-svg" style="padding-right: 2px ; " fill="#4f51b5" height="15px" width="15px"
+                version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512" xml:space="preserve" stroke="#4f51b5">
+
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                <g id="SVGRepo_iconCarrier">
+                    <g>
+                        <g>
+                            <path
+                                d="M439.44,411.595l-77.319-77.318c-9.299-9.298-24.374-9.298-33.672,0l-32.036,32.036 c-62.811-35.428-115.3-87.917-150.728-150.728l34.21-34.21c9.299-9.298,9.299-24.374,0-33.672l-77.319-77.316 c-9.299-9.298-24.374-9.298-33.672,0l-49.374,49.374l0.191,0.191C2.241,134.231-4.924,158.937,3.575,183.288 C56.242,334.211,177.788,455.756,328.71,508.423c23.26,8.117,46.773,1.962,61.305-13.832l0.05,0.05l49.374-49.374 C448.739,435.969,448.739,420.894,439.44,411.595z" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path
+                                d="M260.948,135.95c-9.271,0-16.787,7.516-16.787,16.787c0,9.271,7.515,16.787,16.787,16.787 c44.954,0,81.528,36.573,81.528,81.527c0,9.271,7.516,16.787,16.787,16.787s16.787-7.516,16.787-16.787 C376.05,187.585,324.415,135.95,260.948,135.95z" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path
+                                d="M260.948,67.591c-9.271,0-16.787,7.516-16.787,16.787c0,9.271,7.515,16.787,16.787,16.787 c82.648,0,149.887,67.239,149.887,149.885c0,9.271,7.516,16.787,16.787,16.787c9.271,0,16.787-7.516,16.787-16.787 C444.409,149.89,362.109,67.591,260.948,67.591z" />
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path
+                                d="M438.467,73.531C391.049,26.114,328.005,0,260.948,0c-9.271,0-16.787,7.516-16.787,16.787 c0,9.271,7.516,16.787,16.787,16.787c119.916,0,217.477,97.559,217.477,217.477c0,9.271,7.516,16.787,16.787,16.787 c9.271,0,16.787-7.516,16.787-16.787C511.999,183.992,485.885,120.948,438.467,73.531z" />
+                        </g>
+                    </g>
+                </g>
+
+            </svg>+91 8660803099
+        </span>
+        <div class="button">
+            <!-- <input type="button" name="email" id="email"> -->
+            <svg class="navigation-svg" fill="#4f51b5" width="15px" height="15px"
+                style="padding-left:2px ; padding: right 2px; ;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M4 7L10.94 11.3375C11.5885 11.7428 12.4115 11.7428 13.06 11.3375L20 7M5 18H19C20.1046 18 21 17.1046 21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <label for="email">enquires@bytesplash.in</label>
+        </div>
+    </div>
+    <div id="info-to-and-of-candidate">
+        <div id="info-to-candidate">
+            <img src="../bytesplash images/Designer-discuss.png" alt="Designer-discuss"
+                style="width: 370px; height: 370px; float: left; padding-right: 40px; padding-left: 15px;">
+            <div>
+                <h1>The Best Software Training And Placement Institute In Marthahalli, Bengaluru</h1>
+                <p>All Courses Included with the Student Dahsboard with the <span class="lms-decoration"
+                        style="color: #4f51b5;"><b>Byte Splash LMS, Learning Management System</b></span> for the
+                    students as the dashboard for the courses and its assigments and daily class recordings.</p><br>
+                <label class="get-started" style="background-color: #0661a7; color: #fff2ec; padding: 10px 20px;">Get
+                    Started</label>
+                <p style="color: #928f8f; font-size: x-large;">Courses</p>
+                <img src="../bytesplash images/courses-icons.png" alt="courses-icons" style="width: 60%; ">
+            </div>
+        </div>
+        <br><br><br>
+        <div id="info-of-canditade">
+            <div class="info-of-canditade-1">
+                <h2>
+                    What we provide ?
+                </h2>
+                <ul>
+                    <li>
+                        We provide industry standard software training where the candidate can able to individually
+                        work
+                        with products following the real time scenarios that industries follow, It is like companies
+                        can
+                        pickup the right candidate with good technical skills
+                    </li>
+                    <br>
+                    <li>
+                        After all training we will access the candidate then placements will be provided for the
+                        candidate's
+                        to get in to their dream jobs.
+                    </li>
+                </ul>
+                <h2>Let's Dive in to Curriculum</h2>
+            </div>
+            <div class="info-of-canditade-1" style="margin-left: 50px;">
+                <h2>Your path for a successful career!</h2>
+                <div class="candidate-details">
+                    <p style="color: #9fcae6;">NEW BATCH STARTS FROM JANUARY 2024</p>
+                    <p style="color: #0a0c24; line-height: 10px;">Submit Your Details, Our team will get back to you</p>
+
+                    <input type="text" name="name" id="name" placeholder="Enter Full Name"
+                        style="width: 97%; height: 35px; border-radius:5px; margin-bottom: 10px;">
+                    <input type="text" name="email" id="email" placeholder="Enter Email Id"
+                        style="width: 97%; height: 35px; border-radius:5px; margin-bottom: 10px;">
+                    <select style=" width: 20%; height: 40px; border-radius:5px; padding: 3px;">
+                        <option value="+91">+91</option>
+                    </select>
+                    <input type="text" name="Moblie no" id="Mobile no" placeholder="Enter Mobile No"
+                        style="width: 75.5%; height: 35px; border-radius:5px; margin-bottom: 10px;">
+                    <input type="submit" id="submit"
+                        style="width: 99%; height: 35px; border-radius:5px; background-color: #0661a7; color: #ffffff;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id=" program-designed-for-you">
+        <p style="text-align: center; font-size: xx-large;">A Better Program designed for you offline and online of your
+            comfort</p>
+        <div class="courses-boxes">
+            <div class="row-1">
+                <div class="box">
+                    <img src="../bytesplash images/aptitude-and-reasoning.png" alt="aptitude-and-reasoning">
+                    <p style="font-size: x-large;">Aptitude and Reasoning</p>
+                    <p style="color: #808080;">Have a structured learning with the multiple scenario based questions</p>
+                </div>
+                <div class="box">
+                    <img src="../bytesplash images/coding and programming.png" alt="coding and programming"
+                        style="width: 80px;height: 80px;">
+                    <p style="font-size: x-large;">Coding with Programming</p>
+                    <p style="color: #808080;"> A well planned coding sessions with real time examples</p>
+                </div>
+                <div class="box">
+                    <img src="../bytesplash images/communication-resized.png" alt="communication-resized">
+                    <p style="font-size: x-large;">Soft Skills & Communication</p>
+                    <p style="color: #808080;">Industry orientied soft skills and communication trainings will be
+                        provided</p>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="box">
+                    <img src="../bytesplash images/real time projects.png" alt="real time projects">
+                    <p style="font-size: x-large;">Real Time Projects</p>
+                    <p style="color: #808080;">Have a practical approach and guidance to the real time industry oriented
+                        projects</p>
+                </div>
+                <div class="box">
+                    <img src="../bytesplash images/mock_interviews-resized.png" alt="mock_interviews-resized">
+                    <p style="font-size: x-large;">Mock Interviews</p>
+                    <p style="color: #808080;">Multiple mock interview session's in order to make every candidate up to
+                        the mark</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-bar">
+        <div class="footer-head" style="display: flex; flex-wrap: wrap; margin-bottom: 20px;">
+            <span class="home">
+                Home
+            </span>
+            <span class="home">
+                Courses
+            </span>
+            <span class="home">
+                Contact Us
+            </span>
+        </div>
+        <div class="footer-middle" style="display: flex; flex-wrap: wrap;  margin-bottom: 20px;">
+            <div class="home">
+                Privacy Policy
+            </div>
+            <div style="color: #ffffff; margin-left: 20px;">
+                All Rights Resversed <sup>&#174</sup>
+            </div>
+            <div class="home">
+                bytesplash.in
+            </div>
+        </div>
+        <div class="footer-footer" style="color: #ffffff; margin-bottom: 20px;">
+            Designed and developed by <span class="ByteSplashTeam">Byte Splash Team</span>
+        </div>
+    </div>
+</body>
+
+</html>
